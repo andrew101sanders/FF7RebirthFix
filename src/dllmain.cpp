@@ -1194,7 +1194,7 @@ LRESULT CALLBACK LowLevelKeyboardProc( int nCode, WPARAM wParam, LPARAM lParam )
             if (!(pKey->flags & KF_REPEAT))
             {
                 int keyIndex = vk - VK_NUMPAD1;
-                fFOVMulti = 0.6f + (keyIndex + 1) * 0.1f;
+                fFOVMulti = 0.6f + (keyIndex) * 0.1f;
 
 				spdlog::info( "FOV multiplier set to {:.1f}", fFOVMulti );
 			}
